@@ -1,0 +1,242 @@
+@font-face {
+    font-family: letter;
+    src: url(../assets/fonts/lineto-lettera-pro-light.woff);
+}
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}  
+    
+
+#first_background, #first_background:before{
+    background: 50% 100%;
+    margin-left: -10%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 130vw;
+    height: 480vh;
+}
+#first_background::before{
+    opacity: 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../assets/images/wallpaper.png); 
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(1.3);
+    z-index: -1;
+    animation-name: anim_background;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    left: 15%;
+    animation-name: anim_container;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+.container p {
+    font-family: letter;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+.text_container {
+    background-color: rgba(0, 0, 0, 0.05);
+    line-height: 40px;
+    border-radius: 25px;
+    padding-right: 100px;
+    margin-bottom: 5%;
+}
+
+.text_container p {
+    font-family: letter;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.line {
+    position: relative;
+    top: 45%;
+    width: 7em;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+    margin-top: 6px;
+    margin-left: 20px;
+    animation: typewriter 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 10 normal;
+    animation-delay: 9s;
+}
+.anim-typewriter_1 {
+    margin-top: 12px;
+    margin-left: 20px;
+    animation: typewriter_1 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 10 normal;
+    animation-delay: 14s;
+}
+.anim-typewriter_2 {
+    margin-top: 12px;
+    margin-left: 20px;
+    animation: typewriter_2 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 7 normal;
+    animation-delay: 19s;
+}
+.anim-typewriter_3 {
+    margin-top: 6px;
+    margin-left: 20px;
+    animation: typewriter_3 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 7 normal;
+    animation-delay: 22s;
+
+}.anim-typewriter_4 {
+    margin-top: 6px;
+    margin-left: 20px;
+    animation: typewriter_4 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+    animation-delay: 25s;
+}
+
+/* ANIMATIONS */
+
+@keyframes anim_container{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes anim_background {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter {
+    0% {
+          width: 0;
+          opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+
+
+    100% {
+        border-right-color: transparent;
+        opacity: 1;
+        width: 7em;
+    }
+}
+
+@keyframes typewriter_1 {
+    0% {
+          width: 0;
+          opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 10.9em;
+        border-right-color: transparent;
+    }
+}
+
+
+@keyframes typewriter_2 {
+    0% {
+          width: 0;
+          opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+    70%{
+        border-right-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+        width: 12.1em;
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typewriter_3 {
+    0% {
+          width: 0;
+          opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+
+    70%{
+        border-right-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+        width: 9em;
+        border-right-color: transparent;
+    }
+}
+@keyframes typewriter_4 {
+    0% {
+          width: 0;
+          opacity: 0;
+    }
+    1%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 10.9em;
+    }
+}
+
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color:  rgba(0, 0, 0, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}

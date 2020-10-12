@@ -1,0 +1,325 @@
+.p_top_1 {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.p_top_2 {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+.p_top_3 {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+.p_top_4 {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#in_1{
+    position: absolute;
+    opacity: 0;
+    animation-name: anim_in;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+#in_2{
+    position: absolute;
+    opacity: 0;
+    animation-name: anim_in;
+    animation-duration: 3s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+}
+#in_3{
+    position: absolute;
+    opacity: 0;
+    animation-name: anim_in_last;
+    animation-duration: 3s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+#eco{
+    animation-name: title;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#image_me{
+    opacity: 0; 
+    animation-name: anim_image_me;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+#right{
+    animation-name: anim_button_right;
+    animation-duration: 8s;
+    animation-delay: 5s;
+}
+#left{
+    animation-name: anim_button_left;
+    animation-duration: 8s;
+    animation-delay: 5s;
+}
+#button{
+    opacity: 0;
+    animation-name: anim_button;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+#button_1{
+    opacity: 0;
+    animation-name: anim_button;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+#button_2{
+    opacity: 0;
+    animation-name: anim_button;
+    animation-duration: 5s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}#button_3{
+    opacity: 0;
+    animation-name: anim_button;
+    animation-duration: 5s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+#vertical_line {
+    position: absolute;
+    left: 50%;
+    height: 0px;
+    width: 2px;
+    background-color:#BBBBBB;
+    animation-name: anim_line;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color:#BBBBBB;
+}
+
+#vertical_line_second {
+    position: absolute;
+    left: 50%;
+    height: 0px;
+    width: 2px;
+    background-color:#BBBBBB;
+    animation-name: anim_line_second;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+#soc_med_1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin-bottom: 10%;
+    margin-right: 2%;
+    transform: translateX(50px);
+    animation-name: anim_soc_med;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+#soc_med_2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin-bottom: 6%;
+    margin-right: 2%;
+    transform: translateX(50px);
+    animation-name: anim_soc_med;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#soc_med_3{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    transform: translateX(-50px);
+    animation-name: anim_soc_med;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* ANIMATIONS */
+
+
+@keyframes title_opacity{
+    from{
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-0px)
+    }
+}
+
+@keyframes anim_line{
+    0%{
+        height: 0;
+        top: 120px;
+    }
+    50%{
+        height: 280px;
+        transform: translateX(0);
+        top: 0px;
+    }
+    75%{
+        height: 280px;
+        transform: translateX(-140px);
+        top: 0px;
+    }
+    100%{
+        transform: translateX(-140px);
+        height: 0;
+        top: 120px;
+    }
+}
+@keyframes anim_line_second{
+    0%{
+        height: 0;
+        top: 120px;
+    }
+    50%{
+        height: 280px;
+        transform: translateX(0);
+        top: 0px;
+    }
+    75%{
+        height: 280px;
+        transform: translateX(140px);
+        top: 0px;
+    }
+    100%{
+        transform: translateX(140px);
+        height: 0;
+        top: 120px;
+    }
+
+}
+
+
+@keyframes title{
+    from{ transform: translateX(-200px);}
+    to{ transform: translateX(0px);}
+}
+@keyframes anim_image_me{
+    from{ 
+        opacity: 0; 
+    }
+    to{ 
+        opacity: 1;
+    }
+}
+@keyframes anim_in{
+    0%{ 
+        opacity: 0; 
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
+
+@keyframes anim_in_last{
+    0%{ 
+        opacity: 0; 
+    }
+    10%{ 
+        opacity: 1;
+    }
+    100%{ 
+        opacity: 1;
+        color: black;
+    }
+}
+@keyframes anim_text_last{
+    0%{ 
+        opacity: 0; 
+        transform: translateX(-10px);
+    }
+    10%{ 
+        opacity: 1;
+        transform: translateX(10px);
+    }
+    100%{ 
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
+
+@keyframes anim_soc_med{
+    0%{ 
+        opacity: 0; 
+        transform: translateY(50px);
+    }
+    100%{ 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes anim_button{
+    0%{ 
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
+@keyframes anim_button_right{
+    0%{ 
+        transform: translateX(0px);
+    } 
+    50%{ 
+        transform: translateX(10px);
+    }
+    100%{ 
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes anim_button_left{
+    0%{ 
+        transform: translateX(0px);
+    } 
+    50%{ 
+        transform: translateX(-10px);
+    }
+    100%{ 
+        transform: translateX(0px);
+    }
+}

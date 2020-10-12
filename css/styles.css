@@ -1,0 +1,134 @@
+@font-face {
+    font-family: letter;
+    src: url(./assets/fonts/lineto-lettera-pro-light.woff);
+}
+/* Texts */
+#eco {
+    margin:0;
+    transform: translateX(-200px);
+    font-family: letter;
+    font-size: 25px;
+    color: #7E7E7E;
+    white-space: pre;
+    margin-bottom: 10px;
+}
+
+p {
+    margin:0;
+    font-family: letter;
+    font-size: 12px;
+    white-space: pre;
+}
+
+/* DIV */
+#intro{
+    display: inline;
+    position: absolute;
+}
+#intro p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#social_media{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    background-color: red;
+    width: 20%;
+    height: 100%;
+}
+/* TOP */
+#image_me {
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: -10;
+}
+#icon {
+    height: 30px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: height 0.3s;
+}
+
+#icon:hover {
+    height: 35px;
+}
+
+#first {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+
+/* MID */
+
+/* Costumize Button */
+#text, #left, #right{
+    float: left;
+    font-family: letter;
+    font-size: 20px;
+    white-space: pre;
+}
+#text {
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: transform 100s;
+}
+#left,#right {
+    transition: transform 0.3s;
+    animation-iteration-count: 1;
+}
+.button:hover #left{
+    transform: translateX(-10px);
+    animation-name: left_anim;
+    animation-duration: 10s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+.button:hover #right{
+    transform: translateX(10px);
+    animation-name: right_anim;
+    animation-duration: 10s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#top_href:hover {
+    color: #0d7377;
+}
+#top_href{
+    color: black;
+}
+#default_image {
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: -10;
+}
+
+/* ANIMATIONS */
+
+
+
+@keyframes left_anim{
+    0%{ 
+        transform: translateX(-10px);
+    } 
+    50%{ 
+        transform: translateX(0px);
+    }
+    100%{ 
+        transform: translateX(-10px);
+    }
+}
+@keyframes right_anim{
+    0%{ 
+        transform: translateX(10px);
+    } 
+    50%{ 
+        transform: translateX(0px);
+    }
+    100%{ 
+        transform: translateX(10px);
+    }
+}

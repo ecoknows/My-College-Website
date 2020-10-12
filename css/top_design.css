@@ -1,0 +1,97 @@
+#time,#time2,#time3{
+    margin-left: -5px;
+    display: inline-block;
+}
+
+#time::before{
+    content: " ";
+    animation-name: anim_time;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#time_deco{
+    display: inline-block;
+    margin-left: -5px;
+}
+#time2::before{
+    content: " ";
+    animation-name: anim_time;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#time3::before{
+    content: " ";
+    animation-name: anim_time;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#lat{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+#long{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation-name: title_opacity;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title_opacity{
+    from{
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-0px)
+    }
+}
+
+@keyframes anim_time{
+    0%{
+        content: "0";
+    }
+    10%{
+        content: "1";
+    }
+    20%{
+        content: "2";
+    }
+    30%{
+        content: "3";
+    }
+    40%{
+        content: "4";
+    }
+    50%{
+        content: "5";
+    }
+    60%{
+        content: "6";
+    }
+    70%{
+        content: "7";
+    }
+    80%{
+        content: "8";
+    }
+    90%{
+        content: "9";
+    }
+    100%{
+        content: "0";
+    }
+
+}
